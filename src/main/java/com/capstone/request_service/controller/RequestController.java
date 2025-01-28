@@ -38,8 +38,8 @@ public class RequestController {
 
     // Get requests by username
     @GetMapping("/requests/user/{username}")
-    public ResponseEntity<List<RequestPojo>> getRequestsByUsername(@PathVariable String username) {
-        List<RequestPojo> requests = requestService.getRequestsByUsername(username);
+    public ResponseEntity<List<RequestPojo>> getRequestsByEmail(@PathVariable String email) {
+        List<RequestPojo> requests = requestService.getRequestsByEmail(email);
         return ResponseEntity.ok(requests);
     }
 

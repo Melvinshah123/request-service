@@ -8,7 +8,7 @@ import java.util.List;
 
 @Repository
 public interface RequestRepository extends JpaRepository<RequestEntity,Integer> {
-    List<RequestEntity> findByUsername(String username);
+    List<RequestEntity> findByEmail(String email);
     List<RequestEntity> findByCommunityId(int communityId);
     List<RequestEntity> findByStatus(String status);
 }

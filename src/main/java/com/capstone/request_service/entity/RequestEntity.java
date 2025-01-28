@@ -19,8 +19,8 @@ public class RequestEntity {
     @Column(name = "request_id")
     private int requestId;
 
-    @Column(name = "username", nullable = false)
-    private String username;
+    @Column(name = "email", nullable = false)
+    private String email;
 
     @Column(name = "community_id", nullable = false)
     private int communityId;
